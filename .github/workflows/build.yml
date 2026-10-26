@@ -25,6 +25,9 @@ jobs:
       - name: Configurer le SDK Android
         uses: android-actions/setup-android@v3.2.2
 
+      - name: Accepter les licences Android
+        run: yes | sdkmanager --licenses > /dev/null || true
+
       - name: Installer les composants Android
         run: sdkmanager "platforms;android-34" "build-tools;34.0.0"
 
@@ -60,14 +63,3 @@ jobs:
             app/build/reports/
             app/build/test-results/
           if-no-files-found: ignore
-
-      - name: Aide en cas d’échec
-        if: failure()
-        run: |
-          {
-            echo "## Le build a échoué"
-            echo "1. Ouvre l'étape en rouge ci-dessus et lis les dernières lignes (cherche « error » ou « FAILED »)."
-            echo "2. Vérifie que chaque fichier est au bon chemin et collé en entier."
-            echo "3. Télécharge l'artefact « rapports-de-build » pour les détails des tests et du lint."
-            echo "4. Copie le message d'erreur et envoie-le pour obtenir un correctif."
-          } >> "$GITHUB_STEP_SUMMARY"
