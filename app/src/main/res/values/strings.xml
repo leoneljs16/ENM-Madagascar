@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Examen National Maths Madagascar</string>
+    <string name="home_title">ENM Madagascar</string>
+    <string name="home_subtitle">Prépare le BEPC et le Baccalauréat, gratuitement et hors ligne.</string>
+    <string name="programme_non_verifie">Liste de chapitres provisoire : à confirmer avec le programme officiel avant d’être présentée comme officielle.</string>
+    <string name="bientot">Cette rubrique sera disponible à l’étape suivante du développement.</string>
+    <string name="a_propos_texte">Examen National Maths Madagascar (ENM Madagascar), version de développement 0.1.0.\n\nApplication gratuite, sans compte, qui fonctionne hors ligne.\n\nLes contenus non officiels sont toujours signalés comme tels.</string>
+</resources>
