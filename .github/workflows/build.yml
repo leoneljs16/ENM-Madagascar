@@ -22,14 +22,11 @@ jobs:
           distribution: temurin
           java-version: "17"
 
-      - name: Configurer le SDK Android
-        uses: android-actions/setup-android@v3.2.2
-
-      - name: Accepter les licences Android
-        run: yes | sdkmanager --licenses > /dev/null || true
-
-      - name: Installer les composants Android
-        run: sdkmanager "platforms;android-34" "build-tools;34.0.0"
+      - name: Préparer le SDK Android préinstallé
+        run: |
+          SDKM="$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager"
+          yes | "$SDKM" --licenses > /dev/null || true
+          "$SDKM" "platforms;android-34" "build-tools;34.0.0"
 
       - name: Installer Gradle 8.10.2
         run: |
