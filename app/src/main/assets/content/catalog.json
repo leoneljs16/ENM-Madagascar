@@ -1,0 +1,65 @@
+{
+  "tracks": [
+    {
+      "id": "bepc",
+      "title": "BEPC — Mathématiques",
+      "exam": "BEPC",
+      "verified": false,
+      "chapters": [
+        "Calcul numérique et algébrique",
+        "Fractions, puissances et racines",
+        "Équations et inéquations",
+        "Systèmes d’équations",
+        "Fonctions et représentation graphique",
+        "Proportionnalité et pourcentages",
+        "Géométrie plane",
+        "Théorème de Pythagore",
+        "Théorème de Thalès",
+        "Trigonométrie",
+        "Statistiques et probabilités"
+      ]
+    },
+    {
+      "id": "bac_a",
+      "title": "Baccalauréat série A",
+      "exam": "BAC",
+      "verified": false,
+      "chapters": [
+        "Fonctions et limites",
+        "Dérivation et applications",
+        "Suites numériques",
+        "Probabilités et statistiques"
+      ]
+    },
+    {
+      "id": "bac_c",
+      "title": "Baccalauréat série C",
+      "exam": "BAC",
+      "verified": false,
+      "chapters": [
+        "Fonctions et limites",
+        "Dérivation et applications",
+        "Primitives et intégration",
+        "Suites numériques",
+        "Nombres complexes",
+        "Géométrie analytique et espace",
+        "Probabilités et statistiques"
+      ]
+    },
+    {
+      "id": "bac_d",
+      "title": "Baccalauréat série D",
+      "exam": "BAC",
+      "verified": false,
+      "chapters": [
+        "Fonctions et limites",
+        "Dérivation et applications",
+        "Primitives et intégration",
+        "Suites numériques",
+        "Équations et inéquations",
+        "Géométrie analytique et espace",
+        "Probabilités et statistiques"
+      ]
+    }
+  ]
+}
